@@ -53,10 +53,10 @@
 </head>
 
 <body>
-    <h3>Práctica 4</h3>
-    <form action="return" method="post" enctype="multipart/form-data" target="=_blank">
+    <h3>API s HTML: Media Source Extensions</h3>
+<form action="return" method="post" enctype="multipart/form-data" target="=_blank">
         <p>Sube un archivo : <input type="file" id="files" name="files[]" accept="video/mp4"
-                onchange="cargaElArchivo(files[verano.mp4]);" />
+                onchange="cargaElArchivo(files[verano.mp4, encuentro_con_delfines.mp4]);" />
 
             <div id="progress_bar">
                 <div class="percent">0%</div>
@@ -100,12 +100,13 @@
                 }
                 document.getElementById('files').addEventListener('change', handleFileSelect, false);
             </script>
-            <video width="400px" height="300px" id="video" poster="foto verano.jpg">
+    <video width="400px" height="300px" 
+    id="video" poster= [foto verano.jpg, foto encuentro con delfines.jpg]>
 
 
     </form>
     <source src="verano.mp4" type="video/mp4">
-    <source src="verano.ogv" type="video/ogv">
+    <source src="encuentro_con_delfines.mp4" type="video/mp4">
 
     </video><br /><br>
     <div>
